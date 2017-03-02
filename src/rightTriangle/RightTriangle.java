@@ -14,10 +14,11 @@ public class RightTriangle
 	public static void main(String[] args) 
 	{
 		String whichSide;
-		input = new Scanner(System.in);
+		
 		int responds = 0;
 		
 		do{
+			input = new Scanner(System.in);
 		System.out.print("Please select the side you need to be answered A, B, or C >>> "); 
 		whichSide = input.nextLine(); 
 		
@@ -37,8 +38,10 @@ public class RightTriangle
 		 System.out.print("\nWould you like to solve for another triangle?");
 		 System.out.print("\nEnter 1 for yes, or any other number for no >>>> ");
 		 responds = input.nextInt();
+		 input.hasNextLine();
 		}while(responds == 1);
-		System.out.print("Have a great day!!");
+		
+		System.out.print("Have a great day math free!!");
 	}
 				public static void displayAside()
 				{
